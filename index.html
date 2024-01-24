@@ -23,6 +23,7 @@
                         'color_primary': '#FF4240',
                         'text_color_opacity': '#13131899',
                         'text_color': '#131318',
+                        'back_color':'#13131880',
 
 
                     }
@@ -76,12 +77,12 @@
                 <a class="ml-6 btn bg-color_primary text-white uppercase">Get Ticket</a>
             </div>
         </div>
-        <div class="carousel w-full ">
+        <div class="carousel w-full relative ">
             <div id="slide1" class="carousel-item relative justify-center  w-full">
                 <img src="Images/1.png" class="p-4 w-[335px] h-[200px] lg:w-[1140px] lg:h-[550px]" />
                 <div class="  absolute flex justify-center  translate-y-20 left-5 right-5 top-1/2">
                     <a href="#slide4" class="  btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>  
                 </div>
             </div>
             <div id="slide2" class="carousel-item relative justify-center  w-full">
@@ -98,88 +99,100 @@
         <!-- profesional hockey -->
         <section>
             <div class="grid justify-center text-center">
-                <hr class="">
+                <div class=" border border-dotted"></div>
                 <h2 class="text-4xl font-extrabold ">Professional Hockeys Club</h2>
                 <p class="pt-2 pb-2 text-text_color_opacity font-medium">Dit amet consectetur. Condimentum dignissim
                     adipiscing aliquam turpis placerat dolor. Purus urna in
                     sit nullam proin. </p>
-                <hr>
+                    <div class=" border border-dotted"></div>
             </div>
         </section>
         <!-- progress bar -->
-        <section class="  grid grid-cols-1 lg:grid-cols-4 lg:mt-5 lg:ml-20">
+        <section class="gap-5  grid grid-cols-1 lg:grid-cols-4 mt-3 mb-4 lg:mt-5 lg:ml-20">
             <div class="justify-center text-center">
-                <div class="radial-progress text-color_primary  " style="--value:87;" role="progressbar">87%</div>
+                <div class="radial-progress text-color_primary  " style="--value:87;--size:6rem" role="progressbar">87%</div>
                 <h2 class="justify-center text-center font-bold">Prayer Facility</h2>
                 <p class="text-center">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
             </div>
             <div class="justify-center text-center">
-                <div class="radial-progress text-green-300 " style="--value:87;" role="progressbar">87%</div>
+                <div class="radial-progress text-green-300 " style="--value:95;--size:6rem" role="progressbar">95%</div>
                 <h2 class="justify-center text-center font-bold">Experienced Coach</h2>
                 <p class="text-center">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
             </div>
             <div class="justify-center text-center">
-                <div class="radial-progress text-yellow-400 " style="--value:87;" role="progressbar">87%</div>
+                <div class="radial-progress text-yellow-400 " style="--value:90;--size:6rem" role="progressbar">90%</div>
                 <h2 class="justify-center text-center font-bold">Senior Player</h2>
                 <p class="text-center">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
             </div>
             <div class="justify-center text-center lg:pb-14">
-                <div class="radial-progress text-blue-300 " style="--value:87;" role="progressbar">87%</div>
+                <div class="radial-progress text-blue-300 " style="--value:80;--size:6rem" role="progressbar">80%</div>
                 <h2 class="justify-center text-center font-bold">Training Ground</h2>
                 <p class="text-center">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
             </div>
         </section>
         <!-- program section -->
         <section class="my-2">
-            <hr>
+            <div class=" border border-dotted"></div>
             <div class=" text-center my-3">
                 <h1 class="text-4xl font-extrabold">Program Sections</h1>
                 <p class="justify-center pb-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
                     placerat <br> dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
-            <hr>
+            <div class=" border border-dotted"></div>
         </section>
         <!-- images -->
-        <section>
-            <div class=" grid grid-cols-1 w-auto h-auto lg:flex  lg:justify-center gap-10 ">
-                <div class=" bg-[url('Images/2.png')] text-center w-[573px] h-[335px]  ">
-
-                    <h1 class="text-white text-4xl font-extrabold my-10">Junior Program</h1>
-                    <p class="text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <button class="btn bg-color_primary text-white ">SEE MORE</button>
+        <section class="grid grid-cols-1  lg:grid lg:grid-cols-2 lg:container mx-auto lg:pl-40 lg:pr-40 lg:mb-5 gap-2">
+            <!-- img-1 -->
+            <div class="card w-96 bg-base  shadow-xl image-full container mx-auto lg:w-[570px]  ">
+                <figure><img src="Images/2.png" alt="Shoes" /></figure>
+                <div class="card-body lg:mt-9 ">
+                  <h2 class="card-title text-2xl font-extrabold ">Junior Program</h2>
+                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  <div class="card-actions justify-start">
+                    <button class="lg:my-9  btn btn-primary text-white  bg-color_primary border-0">Register Now!</button>
+                  </div>
                 </div>
-                <div class="bg-[url('Images/3.png')] text-center w-[573px] h-[335px]  ">
-                    <h1 class="text-white text-4xl font-extrabold my-10">Junior Program</h1>
-                    <p class="text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <button class="btn bg-color_primary text-white ">SEE MORE</button>
-                </div>
-            </div>
-        </section>
-        <section class="grid justify-center text-left  ">
-            <div class="bg-[url('Images/4.png')]  w-[1175px] h-[450px] mt-3 mb-20  ">
-                <h1 class="text-white text-4xl font-extrabold my-10">Junior Program</h1>
-                <p class="text-white text-left ">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                    <br> enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                    sed et in.
-                </p>
-                <button class="btn bg-color_primary text-white ">SEE MORE</button>
-            </div>
-        </section>
+              </div>
+              <!-- 2nd img -->
+            <div class="card w-96 bg-base-100 shadow-xl image-full container mx-auto lg:w-[570px]  ">
+                <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                <div class="card-body lg:mt-9">
+                    <h2 class="card-title text-2xl font-extrabold ">Teenager Program</h2>
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                      enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <div class="card-actions justify-start">
+                      <button class="lg:my-9  btn btn-primary text-white  bg-color_primary border-0">Register Now!</button>
+                    </div>
+                  </div>
+              </div>
+              </section>
+              <section>
+                <!-- 3rd img -->
+            <div class="card w-96 bg-base-100 shadow-xl image-full mt-2 container mx-auto lg:w-[1170px]  ">
+                <figure><img src="Images/4.png" alt="Shoes" /></figure>
+                <div class="card-body lg:mt-20">
+                    <h2 class="card-title text-2xl font-extrabold ">Professional Program</h2>
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. <br> Elit elit 
+                      enim sagittis turpis in magna. Id et sed <br> euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <div class="card-actions justify-start">
+                      <button class="lg:my-20  btn btn-primary text-white  bg-color_primary border-0">Register Now!</button>
+                    </div>
+                  </div>
+              </div>
+            
+       </section>
         <!-- program section -->
         <section class="my-2">
-            <hr>
+            <div class=" border border-dotted"></div>
             <div class=" text-center my-3">
                 <h1 class="text-4xl font-extrabold">Our New Products</h1>
                 <p class="justify-center pb-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
                     placerat <br> dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
-            <hr>
+            <div class=" border border-dotted"></div>
         </section>
         <!-- card items here -->
         <section class="grid  lg:grid-cols-2 lg:container mx-auto lg:mb-20 ">
@@ -196,10 +209,10 @@
                             <img src="Images/heart.png" alt="">
                             <p> 200 </p>
                         </div>
-                        <h2 class="card-title font-extrabold text-2xl">World Cup Flags Football</h2>
+                        <h2 class="card-title font-extrabold text-2xl">Varsity Jacket</h2>
                         <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
                         <div class="lg:flex grid ">
-                            <p class="font-extrabold text-color_primary text-xl">Price - $22.00</p>
+                            <p class="font-extrabold text-color_primary text-xl">Price - $30.50</p>
                             <div class="flex ">
                                 <img src="Images/buy.png" alt="">
                                 <p class="text-xl ">Delivery Fee : Free</p>
@@ -218,14 +231,14 @@
                             <img src="Images/STAR.png" alt="">
                             <p>5.0</p>
                             <img src="Images/eye.png" alt="">
-                            <p> 20 </p>
+                            <p> 540 </p>
                             <img src="Images/heart.png" alt="">
-                            <p> 200 </p>
+                            <p> 400 </p>
                         </div>
-                        <h2 class="card-title font-extrabold text-2xl">World Cup Flags Football</h2>
+                        <h2 class="card-title font-extrabold text-2xl"> Green Football 2023</h2>
                         <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
                         <div class="lg:flex grid ">
-                            <p class="font-extrabold text-color_primary text-xl">Price - $22.00</p>
+                            <p class="font-extrabold text-color_primary text-xl">Price - $40.00</p>
                             <div class="flex ">
                                 <img src="Images/buy.png" alt="">
                                 <p class="text-xl ">Delivery Fee : Free</p>
@@ -242,16 +255,16 @@
                     <div class="card-body">
                         <div class="flex ">
                             <img src="Images/STAR.png" alt="">
-                            <p>5.0</p>
+                            <p>4.7</p>
                             <img src="Images/eye.png" alt="">
-                            <p> 20 </p>
+                            <p> 18 </p>
                             <img src="Images/heart.png" alt="">
-                            <p> 200 </p>
+                            <p> 120 </p>
                         </div>
-                        <h2 class="card-title font-extrabold text-2xl">World Cup Flags Football</h2>
+                        <h2 class="card-title font-extrabold text-2xl">Orange Cool Cap</h2>
                         <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
                         <div class="lg:flex grid ">
-                            <p class="font-extrabold text-color_primary text-xl">Price - $22.00</p>
+                            <p class="font-extrabold text-color_primary text-xl">Price - $10.00</p>
                             <div class="flex ">
                                 <img src="Images/buy.png" alt="">
                                 <p class="text-xl ">Delivery Fee : Free</p>
@@ -269,14 +282,14 @@
                             <img src="Images/STAR.png" alt="">
                             <p>5.0</p>
                             <img src="Images/eye.png" alt="">
-                            <p> 20 </p>
+                            <p> 91 </p>
                             <img src="Images/heart.png" alt="">
-                            <p> 200 </p>
+                            <p> 600 </p>
                         </div>
-                        <h2 class="card-title font-extrabold text-2xl">World Cup Flags Football</h2>
+                        <h2 class="card-title font-extrabold text-2xl">Pro Football Jersey</h2>
                         <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
                         <div class="lg:flex grid ">
-                            <p class="font-extrabold text-color_primary text-xl">Price - $22.00</p>
+                            <p class="font-extrabold text-color_primary text-xl">Price - $60.00</p>
                             <div class="flex ">
                                 <img src="Images/buy.png" alt="">
                                 <p class="text-xl ">Delivery Fee : Free</p>
@@ -294,14 +307,14 @@
                             <img src="Images/STAR.png" alt="">
                             <p>5.0</p>
                             <img src="Images/eye.png" alt="">
-                            <p> 20 </p>
+                            <p>19 </p>
                             <img src="Images/heart.png" alt="">
-                            <p> 200 </p>
+                            <p> 189 </p>
                         </div>
-                        <h2 class="card-title font-extrabold text-2xl">World Cup Flags Football</h2>
+                        <h2 class="card-title font-extrabold text-2xl"> Rugby Helmet Fan Editon</h2>
                         <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
                         <div class="lg:flex grid ">
-                            <p class="font-extrabold text-color_primary text-xl">Price - $22.00</p>
+                            <p class="font-extrabold text-color_primary text-xl">Price - $50.00</p>
                             <div class="flex ">
                                 <img src="Images/buy.png" alt="">
                                 <p class="text-xl ">Delivery Fee : Free</p>
@@ -318,16 +331,16 @@
                     <div class="card-body">
                         <div class="flex ">
                             <img src="Images/STAR.png" alt="">
-                            <p>5.0</p>
+                            <p>4.5</p>
                             <img src="Images/eye.png" alt="">
-                            <p> 20 </p>
+                            <p> 45 </p>
                             <img src="Images/heart.png" alt="">
-                            <p> 200 </p>
+                            <p> 230 </p>
                         </div>
-                        <h2 class="card-title font-extrabold text-2xl">World Cup Flags Football</h2>
+                        <h2 class="card-title font-extrabold text-2xl">Football Stickers</h2>
                         <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
                         <div class="lg:flex grid ">
-                            <p class="font-extrabold text-color_primary text-xl">Price - $22.00</p>
+                            <p class="font-extrabold text-color_primary text-xl">Price - $5.50</p>
                             <div class="flex ">
                                 <img src="Images/buy.png" alt="">
                                 <p class="text-xl ">Delivery Fee : Free</p>
@@ -339,7 +352,7 @@
             </div>
         </section>
         <section class="my-2 mb-20">
-            <hr>
+            <div class=" border border-dotted"></div>
             <div class=" text-center my-3 ">
                 <h1 class="text-4xl font-extrabold">Clients Question</h1>
                 <p class="justify-center pb-5 text-text_color_opacity">Dit amet consectetur. Condimentum dignissim
@@ -347,7 +360,7 @@
                     placerat <br> dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
-            <hr>
+            <div class=" border border-dotted"></div>
         </section>
         <!-- FAQ -->
         <section class="my-24 ">
@@ -414,9 +427,60 @@
                 </div>
             </div>
         </section>
+        <!-- Get In Touch -->
+        <section class="my-2">
+            <div class=" border border-dotted"></div>
+            <div class=" text-center my-3">
+                <h1 class="text-4xl font-extrabold">Program Sections</h1>
+                <p class="justify-center pb-5">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat <br> dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
+            <div class=" border border-dotted"></div>
+        </section>
     </main>
-    <footer>
+    <footer class="footer p-10 bg-black text-white">
 
+        <nav class="pl-20">
+            <header class=" text-2xl font-800">Get In Touch</header>
+            Dit amet consectetur. Condimentum adipiscing <br> aliquam turpis placerat dolor. <br> Purus urna in sit nullam
+                proin. </p>
+                <div class="flex gap-1">
+                    <img src="Images/msg.png" alt="">
+                    <a class="link link-hover">hockeys@support.com</a>
+                </div>
+                <div class="flex gap-1">
+                    <img src="Images/call.png" alt="">
+                    <a class="link link-hover">(+62) 123-321-543</a>
+                </div>
+           
+        </nav>
+        <div class="flex ">
+            <nav class="grid gap-2 pl-10">
+                <header class=" text-2xl font-800">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+            <nav class=" pl-10 gap-2 grid">
+                <header class=" text-2xl font-800">Support</header>
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+        </div>
+        
+        <nav class="grid pl-20">
+            <header class=" text-2xl font-800">Company</header>
+            <div class="text-text_color_opacity"></div>
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockeys for kids</a>
+            <a class="link link-hover">Hockeys for Adults</a>
+        </nav>
     </footer>
 </body>
 
